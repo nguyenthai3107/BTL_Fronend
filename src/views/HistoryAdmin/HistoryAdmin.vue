@@ -94,7 +94,7 @@
               title="Cập Nhật Trạng Thái Mượn"
               @ok="handleOkUpdateTraSach"
               @cancel="handleCancelUpdate"
-              :ok-button-props="okButtonAccess"
+              :ok-button-props="{okButtonAccess, style: { background: '#09896f', color: '#fff' }}"
               cancelText="Đóng"
               okText="Xác Nhận"
             >

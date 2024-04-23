@@ -128,7 +128,7 @@
         v-model:open="isModalAccess"
         title="Xác nhận duyệt đơn mượn"
         @ok="handleOkAccess()"
-        :ok-button-props="okButtonAccess"
+        :ok-button-props="{okButtonAccess, style: { background: '#09896f', color: '#fff' }}"
         @cancel="handleCancelAccess"
         cancelText="Đóng"
         okText="Xác nhận"
