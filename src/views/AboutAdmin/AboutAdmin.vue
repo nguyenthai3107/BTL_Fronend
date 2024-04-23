@@ -96,6 +96,7 @@
         @cancel="handleCancel"
         okText="Thêm Sách"
         cancelText="Đóng"
+        :ok-button-props="{ style: { background: '#09896f', color: '#fff' }}"
       >
         <form action="" enctype="multipart/form-data">
           <div class="contentModal row">
@@ -204,6 +205,7 @@
         @cancel="handleCancelEdit"
         okText="Cập Nhật"
         cancelText="Đóng"
+        :ok-button-props="{ style: { background: '#09896f', color: '#fff' }}"
       >
         <form action="" enctype="multipart/form-data">
           <div class="contentModal row">
@@ -307,7 +309,7 @@
         @ok="handleOkDelete"
         @cancel="handleCancelDelete"
         :ok-button-props="okButtonProps"
-        okText="Xác nhận"
+        okText="Xác Nhận"
         cancelText="Đóng"
       >
         <p>Bạn có chắc muốn xóa sách: {{ selectedItem.TenSach }}</p>

@@ -63,7 +63,7 @@
                 <div class="numberCard">
                   {{ totalStaff }}
                 </div>
-                <div class="nameCard">Tổng Nhân Viên/Quản Lý</div>
+                <div class="nameCard">Số Lượng Nhân Viên/Quản Lý</div>
               </div>
             </div>
           </div>
@@ -78,13 +78,13 @@
                 <div class="numberCard">
                   {{ totalCustomer }}
                 </div>
-                <div class="nameCard">Tổng Độc Giả</div>
+                <div class="nameCard">Số Lượng Độc Giả</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h3 class="px-4 mt-2 mb-0">Đơn Mượn</h3>
+      <h3 class="px-4 mt-2 mb-0">Đơn Mượn Chờ Duyệt</h3>
       <div class="ordersCustomer mt-1">
         <table class="table table-hover text-center">
           <thead>

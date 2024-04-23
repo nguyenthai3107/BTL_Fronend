@@ -40,6 +40,7 @@
         &:hover {
           cursor: pointer;
         }
+        color: #ffffff;
       }
     }
   
@@ -56,10 +57,10 @@
     }
   
     .statusOrderWait {
-      border: 2px solid #e5434381;
+      border: 2px solid #ec3030;
       border-radius: 5px;
-      color: #e54343;
-      font-size: 14px;
+      color: #ffffff;
+      background-color: #ec3030;
       width: 100px;
       height: 35px;
       margin: auto;
@@ -71,7 +72,7 @@
     .statusOrderSuccess {
       border-radius: 5px;
       color: #ffffff;
-      background-color: rgba(63, 190, 63, 0.61);
+      background-color: #09896f;
       width: 100px;
       height: 35px;
       margin: auto;
@@ -148,4 +149,8 @@
     font-size: 1rem;
     border: none;
     border-bottom: 1px solid black;
+  }
+
+  .fa-ellipsis-vertical {
+    color: #09896f;
   }

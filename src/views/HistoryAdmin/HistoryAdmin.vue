@@ -18,7 +18,7 @@
           v-model="searchQuery"
           type="search"
           placeholder="Tìm Kiếm Độc Giả"
-          aria-label="Search"
+          aria-label="Tìm"
         />
         <span @click="searchDocGia" class="iconSearch"
           ><i class="fa-solid fa-magnifying-glass"></i
@@ -40,18 +40,18 @@
               <h5 class="font-weight-bold">Thông Tin Độc Giả:</h5>
               <p
                 class="m-0 font-weight-bold"
-                style="color: #40c1fa; font-size: 1.4rem"
+                style="color: #09896f; font-size: 1.4rem"
               >
                 <span class="mr-2">{{ index + 1 }}</span>
                 <a-dropdown class="ml-auto">
                   <a class="ant-dropdown-link" @click.prevent>
-                    <i class="fa-solid fa-ellipsis-vertical fa-primary"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
                   </a>
                   <template #overlay>
                     <a-menu>
                       <a-menu-item>
                         <a @click="showModal(rented)"
-                          ><i class="fa-solid fa-pen" style="color: blue"></i
+                          ><i class="fa-solid fa-pen" style="color: #09896f"></i
                         ></a>
                       </a-menu-item>
                       <a-menu-item>
@@ -133,14 +133,14 @@
                 <td
                   :style="`${
                     rented.TraSach === 'Y'
-                      ? 'color: green; font-weight: bold;'
+                      ? 'color: #09896f; font-weight: bold;'
                       : rented.TraSach === 'N'
-                      ? 'color: red; font-weight: bold;'
+                      ? 'color: #09896f; font-weight: bold;'
                       : rented.TraSach === 'W'
-                      ? 'color: blue; font-weight: bold;'
+                      ? 'color: #09896f; font-weight: bold;'
                       : rented.TraSach === 'D'
-                      ? 'color: orange; font-weight: bold;'
-                      : 'color: black; font-weight: bold;'
+                      ? 'color: #09896f; font-weight: bold;'
+                      : 'color: #09896f; font-weight: bold;'
                   }`"
                 >
                   {{
@@ -162,7 +162,7 @@
             <div>
               <p>
                 Thành Tiền:
-                <span style="color: #d50d0d; font-weight: bold"
+                <span style="color: #09896f; font-weight: bold"
                   >{{ rented.ThanhTien }} VND</span
                 >
               </p>

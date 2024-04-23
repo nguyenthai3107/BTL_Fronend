@@ -23,7 +23,7 @@
                     <p class="text-muted mb-1">Độc Giả</p>
                     <p class="text-muted mb-4">{{ data.NgaySinh }}</p>
                     <div class="d-flex justify-content-center mb-2">
-                      <label for="image" class="btn btn-primary"
+                      <label for="image" class="btn btn-fix"
                         ><i class="fa-solid fa-image"></i>Chỉnh Sửa</label
                       >
                       <input
@@ -106,7 +106,7 @@
                     <button class="btn btn-secondary m-2">Thoát</button>
                   </router-link>
   
-                  <button class="btn btn-primary m-2" @click="handleSave">
+                  <button class="btn btn-fix m-2" @click="handleSave">
                     Cập Nhật
                   </button>
                 </div>

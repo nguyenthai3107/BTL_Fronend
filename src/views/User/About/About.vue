@@ -80,7 +80,7 @@
           @cancel="handleCancelRentBook"
           okText="Xác nhận"
           cancelText="Đóng"
-          :ok-button-props="okButtonAccess"
+          :ok-button-props="{okButtonAccess, style: { background: '#09896f', color: '#fff' }}"
         >
           <form action="" enctype="multipart/form-data">
             <div class="contentModal row">

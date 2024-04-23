@@ -49,12 +49,12 @@
         <span class="text">Đăng Xuất</span>
       </div>
       <a-modal
-        title="Đăng xuất"
+        title="Đăng Xuất"
         :open="isModal"
         @ok="handleOk"
         @cancel="handleCancel"
         :ok-button-props="okButtonProps"
-        okText="Đăng xuất"
+        okText="Đăng Xuất"
         cancelText="Hủy"
       >
         <p>Bạn có chắc muốn đăng xuất khỏi hệ thống?</p>

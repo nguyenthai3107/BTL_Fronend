@@ -63,7 +63,7 @@
               <div>
                 <p>
                   Tổng Tiền Mượn:
-                  <span style="color: red; font-weight: bold"
+                  <span style="color: #09896f; font-weight: bold"
                     >{{ order.ThanhTien }} VND</span
                   >
                 </p>
