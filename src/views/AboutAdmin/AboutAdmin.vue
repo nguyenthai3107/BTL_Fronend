@@ -6,8 +6,8 @@
           class="inputSearch"
           v-model="searchQuery"
           type="search"
-          placeholder="Tìm kiếm tên sách"
-          aria-label="Search"
+          placeholder="Tìm Kiếm Tên Sách"
+          aria-label="Tìm"
         />
         <span @click="searchBooks" class="iconSearch"
           ><i class="fa-solid fa-magnifying-glass"></i
@@ -15,7 +15,7 @@
       </div>
       <div class="ml-auto">
         <button v-if="isLogin" @click="showModal" class="btnAdd">
-          <i class="fa-solid fa-book-open"></i> Thêm sách
+          <i class="fa-solid fa-book-open"></i> Thêm Sách
         </button>
         <router-link to="/admin/login" v-else>
           <button @click="showModal" class="btnAdd">
@@ -91,10 +91,10 @@
         style="top: 40px"
         v-model:open="isModal"
         width="800px"
-        title="Thêm sách"
+        title="Thêm Sách"
         @ok="handleOk"
         @cancel="handleCancel"
-        okText="Thêm sách"
+        okText="Thêm Sách"
         cancelText="Đóng"
       >
         <form action="" enctype="multipart/form-data">
@@ -125,7 +125,7 @@
                   v-model="tenSach"
                   name="tenSach"
                   id=""
-                  placeholder="Tên sách"
+                  placeholder="Tên Sách"
                   autocomplete="off"
                 />
               </div>
@@ -153,7 +153,7 @@
                   v-model="soQuyen"
                   name="soQuyen"
                   id=""
-                  placeholder="Số quyển sách"
+                  placeholder="Số Quyển"
                   autocomplete="off"
                 />
               </div>
@@ -169,7 +169,7 @@
                   v-model="namXuatBan"
                   name="namXuatBan"
                   id=""
-                  placeholder="Năm xuất bản"
+                  placeholder="Năm Xuất Bản"
                   autocomplete="off"
                 />
               </div>
@@ -177,9 +177,9 @@
                 {{ errors.nxb }}
               </p>
               <div class="groupForm">
-                <span>Nhà xuất bản:</span>
+                <span>Nhà Xuất Bản:</span>
                 <select v-model="idNxb">
-                  <option value="">Chọn nhà xuất bản</option>
+                  <option value="">Chọn Nhà Xuất Bản</option>
                   <option
                     v-for="(item, index) in listNxbs"
                     :key="index"
@@ -199,10 +199,10 @@
         style="top: 40px"
         v-model:open="isModalEdit"
         width="800px"
-        title="Chỉnh sửa sách"
+        title="Chỉnh Sửa Sách"
         @ok="handleOkEdit"
         @cancel="handleCancelEdit"
-        okText="Cập nhật"
+        okText="Cập Nhật"
         cancelText="Đóng"
       >
         <form action="" enctype="multipart/form-data">
@@ -211,7 +211,7 @@
               <img class="imageLeftModal" :src="imageUploadEdit" alt="" />
               <div class="btnAddImage d-flex">
                 <label for="image"
-                  ><i class="fa-solid fa-image iconModal"></i>Cập nhật
+                  ><i class="fa-solid fa-image iconModal"></i>Cập Nhật
                   ảnh</label
                 >
                 <input
@@ -233,7 +233,7 @@
                   v-model="selectedItem.TenSach"
                   name="tenSach"
                   id=""
-                  placeholder="Tên sách"
+                  placeholder="Tên Sách"
                   autocomplete="off"
                 />
               </div>
@@ -247,7 +247,7 @@
                   v-model="selectedItem.DonGia"
                   name="donGia"
                   id=""
-                  placeholder="Giá sách"
+                  placeholder="Đơn Giá"
                   autocomplete="off"
                 />
               </div>
@@ -262,7 +262,7 @@
                   v-model="selectedItem.SoQuyen"
                   name="soQuyen"
                   id=""
-                  placeholder="Số lượng sách"
+                  placeholder="Số Quyển"
                   autocomplete="off"
                 />
               </div>
@@ -278,7 +278,7 @@
                   v-model="selectedItem.NamXuatBan"
                   name="namXuatBan"
                   id=""
-                  placeholder="Năm xuất bản"
+                  placeholder="Năm Xuất Bản"
                   autocomplete="off"
                 />
               </div>
@@ -303,7 +303,7 @@
       <a-modal
         style="top: 40px"
         v-model:open="isModalDelete"
-        title="Xóa sách"
+        title="Xóa Sách"
         @ok="handleOkDelete"
         @cancel="handleCancelDelete"
         :ok-button-props="okButtonProps"
@@ -315,7 +315,7 @@
     </div>
   </div>
   <div v-else class="denied">
-    <h3 class="text-center mt-5">Vui lòng đăng nhập để xử dụng dịch vụ</h3>
+    <h3 class="text-center mt-5">Vui lòng đăng nhập tài khoản để thao tác.</h3>
   </div>
 </template>
 
@@ -359,7 +359,7 @@ fetchDataNxb();
 
 const searchBooks = () => {
   if (searchQuery.value.trim() === "") {
-    toast.warn("Vui lòng nhập tên sách");
+    toast.warn("Vui lòng nhập tên sách.");
   } else {
     axios
       .get(`http://localhost:3000/book?tenSach=${searchQuery.value}`)
@@ -372,7 +372,7 @@ const searchBooks = () => {
         }
       })
       .catch((error) => {
-        console.error("Lỗi khi nhận dữ liệu từ API", error);
+        console.error("Lỗi khi nhận dữ liệu từ API.", error);
       });
   }
 };
@@ -402,15 +402,15 @@ const errors = ref({
 });
 
 const handleValidate = () => {
-  errors.value.name = tenSach.value.trim() ? "" : "Vui lòng nhập tên sách";
-  errors.value.nxb = idNxb.value.trim() ? "" : "Vui lòng chọn nhà xuất bản";
+  errors.value.name = tenSach.value.trim() ? "" : "Vui lòng nhập tên sách.";
+  errors.value.nxb = idNxb.value.trim() ? "" : "Vui lòng chọn nhà xuất bản.";
   if (donGia.value <= 0) {
-    errors.value.price = "Giá phải là số nguyên dương";
+    errors.value.price = "Giá phải là số nguyên dương.";
   } else {
     errors.value.price = "";
   }
   if (isNaN(soQuyen.value) || soQuyen.value <= 0) {
-    errors.value.NamXuatBan = "Số lượng phải là số dương";
+    errors.value.NamXuatBan = "Số lượng phải là số nguyên dương.";
   } else {
     errors.value.NamXuatBan = "";
   }

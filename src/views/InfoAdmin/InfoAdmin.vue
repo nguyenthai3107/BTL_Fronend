@@ -29,7 +29,7 @@
                         class="btn btn-edit"
                       >
                         <button type="button" data-mdb-ripple-color="dark">
-                          Chỉnh sửa
+                          Chỉnh Sửa
                         </button>
                       </router-link>
                     </div>
@@ -45,12 +45,12 @@
                   </div>
                   <div class="card-body text-black">
                     <div class="mb-5">
-                      <p class="lead fw-normal mb-1">Thông tin cá nhân</p>
+                      <p class="lead fw-normal mb-1">Thông Tin Cá Nhân</p>
                       <div class="" style="background-color: #f8f9fa">
                         <div class="card-body">
                           <div class="row">
                             <div class="col-sm-3">
-                              <p class="mb-0">Họ tên</p>
+                              <p class="mb-0">Họ Tên</p>
                             </div>
                             <div class="col-sm-9">
                               <p class="text-muted mb-0">{{ data.HoTenNv }}</p>
@@ -59,7 +59,7 @@
                           <hr />
                           <div class="row">
                             <div class="col-sm-3">
-                              <p class="mb-0">Số điện thoại</p>
+                              <p class="mb-0">Số Điện Thoại</p>
                             </div>
                             <div class="col-sm-9">
                               <p class="text-muted mb-0">
@@ -70,7 +70,7 @@
                           <hr />
                           <div class="row">
                             <div class="col-sm-3">
-                              <p class="mb-0">Địa chỉ</p>
+                              <p class="mb-0">Địa Chỉ</p>
                             </div>
                             <div class="col-sm-9">
                               <p class="text-muted mb-0">{{ data.DiaChi }}</p>

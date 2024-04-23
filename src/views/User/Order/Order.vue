@@ -1,11 +1,11 @@
 <template>
     <div class="containPage">
-      <h2>Đơn mượn sách</h2>
+      <h2>Đơn Mượn Sách</h2>
       <div class="contentPage">
         <div class="list-group">
           <div v-if="data.length === 0" class="orderEmpty">
             <img src="../../../public/Illustration/empty2.png" alt="" />
-            <p>Đơn hàng trống</p>
+            <p>Chưa Có Đơn Mượn</p>
           </div>
           <div
             v-for="(order, index) in data"
@@ -13,7 +13,7 @@
             class="list-group-item list-group-item-action mt-3 rounded"
           >
             <div class="d-flex">
-              <h5>Chi tiết đơn mượn:</h5>
+              <h5>Chi Tiết Đơn Mượn:</h5>
               <a-dropdown class="ml-auto" v-if="order.TrangThai === 'W'">
                 <a class="ant-dropdown-link" @click.prevent>
                   <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
@@ -31,23 +31,23 @@
               <a-modal
                 style="top: 40px"
                 v-model:open="isModalDelete"
-                title="Hủy đơn mượn"
+                title="Hủy Đơn Mượn"
                 @ok="handleOkDelete()"
                 :ok-button-props="okButtonProps"
                 @cancel="handleCancelDelete"
                 cancelText="Đóng"
-                okText="Xác nhận hủy"
+                okText="Xác Nhận Hủy"
               >
-                <p>Bạn có chắc muốn hủy đơn mượn.</p>
+                <p>Bạn có chắc muốn hủy đơn mượn ?</p>
               </a-modal>
             </div>
             <table class="table text-center">
               <thead>
                 <tr class="table-borderless">
                   <th scope="col">STT</th>
-                  <th scope="col">Tên sách</th>
-                  <th scope="col">Số lượng</th>
-                  <th scope="col">Đơn Giá/ngày</th>
+                  <th scope="col">Tên Sách</th>
+                  <th scope="col">Số Lượng</th>
+                  <th scope="col">Đơn Giá/Ngày</th>
                 </tr>
               </thead>
               <tbody>
@@ -62,16 +62,16 @@
             <div class="d-flex">
               <div>
                 <p>
-                  Tổng tiền mượn:
+                  Tổng Tiền Mượn:
                   <span style="color: red; font-weight: bold"
                     >{{ order.ThanhTien }} VND</span
                   >
                 </p>
                 <p class="d-inline">
-                  Ngày mượn: {{ formatDateTime(order.NgayMuon) }}
+                  Ngày Mượn: {{ formatDateTime(order.NgayMuon) }}
                 </p>
                 <p class="d-inline ml-3" v-if="order.NgayMuon !== null">
-                  Ngày trả: {{ formatDateTime(order.NgayTra) }}
+                  Ngày Trả: {{ formatDateTime(order.NgayTra) }}
                 </p>
               </div>
   
@@ -79,15 +79,15 @@
                 v-if="order.TrangThai === 'A'"
                 class="statusOrderSuccess mr-0 mb-0"
               >
-                Đã duyệt
+                Đã Duyệt
               </div>
               <div
                 v-else-if="order.TrangThai === 'D'"
                 class="statusOrderDeny mr-0 mb-0"
               >
-                Từ chối
+                Từ Chối
               </div>
-              <div v-else class="statusOrderWait mr-0 mb-0">Chưa duyệt</div>
+              <div v-else class="statusOrderWait mr-0 mb-0">Chờ Duyệt</div>
             </div>
           </div>
         </div>

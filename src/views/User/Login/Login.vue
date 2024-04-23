@@ -3,15 +3,20 @@
     <section>
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col col-xl-10">
+          <div class="col col-xl-20">
             <div class="card loginForm">
               <div class="row g-0" style="min-height: 500px">
                 <div class="col-md-6 col-lg-6 d-flex align-items-center">
                   <div class="card-body p-4 p-lg-5 text-black">
                     <form @submit.prevent="login">
-                      <div class="d-flex align-items-center mb-2">
-                        <div class="titleWeb">Sign In</div>
-                      </div>
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                          <div class="logo">
+                            <img src="../../assets/logoBook.png" alt="" />
+                            <span class="titleWeb"
+                              >KNOW<span class="text-dark">LIB</span></span
+                            >
+                          </div>
+                        </div>
                       <!-- <div class="fw-normal desLogin">
                         Log in as a store employee
                       </div> -->
@@ -26,7 +31,7 @@
                           v-model="phone"
                           name="phone"
                           autocomplete="off"
-                          placeholder="Nhập số diện thoại"
+                          placeholder="Số Điện Thoại"
                           required
                           maxlength="10"
                           minlength="9"
@@ -43,7 +48,7 @@
                           id="password"
                           class="groupInput"
                           autocomplete="off"
-                          placeholder="Nhập mật khẩu"
+                          placeholder="Mật Khẩu"
                           required
                         />
                         <div @click="toggleShowPassword" class="iconPassword">
@@ -56,23 +61,23 @@
                         </div>
                       </div>
                       <a class="small text-muted text-center d-block" href="#!"
-                        >Forgot Your Password?</a
+                        >Quên Mật Khẩu ?</a
                       >
                       <div class="pt-1 mb-4">
-                        <button class="btnPay">SIGN IN</button>
+                        <button class="btnPay">Đăng Nhập</button>
                       </div>
                     </form>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                   <div class="wrapper">
-                    <div class="title">Hello, Friend!</div>
+                    <div class="title">WELCOME!</div>
                     <p>
-                      Register with your personal details to use all of site
-                      features.
+                      Đăng ký thành viên ngay để trải nghiệm
+                      KnowLib
                     </p>
                     <router-link to="/register" class="button btn-register">
-                      <span>SIGN UP</span>
+                      <span>Đăng Ký</span>
                     </router-link>
                   </div>
                 </div>

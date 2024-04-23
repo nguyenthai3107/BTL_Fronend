@@ -1,14 +1,14 @@
 <template>
   <div class="containPage" v-if="isLogin">
     <div class="d-flex justify-content-between align-items-center">
-      <h2>Đơn mượn đã duyệt</h2>
+      <h2>Đơn Mượn Đã Duyệt</h2>
       <div class="groundFilter">
         <select v-model="searchTrangThai" class="filter">
-          <option value="">Trạng thái mượn</option>
-          <option value="W">Chờ nhận</option>
-          <option value="D">Đang mượn</option>
-          <option value="Y">Đã trả</option>
-          <option value="N">Chưa trả</option>
+          <option value="">Trạng Thái Mượn</option>
+          <option value="W">Chờ Nhận</option>
+          <option value="D">Đang Mượn</option>
+          <option value="Y">Đã Trả</option>
+          <option value="N">Chưa Trả</option>
         </select>
         <button class="btn-filter" @click="searchDocGia">Lọc</button>
       </div>
@@ -17,7 +17,7 @@
           class="inputSearch"
           v-model="searchQuery"
           type="search"
-          placeholder="Tìm kiếm đọc giả"
+          placeholder="Tìm Kiếm Độc Giả"
           aria-label="Search"
         />
         <span @click="searchDocGia" class="iconSearch"
@@ -28,7 +28,7 @@
     <div class="contentPage" :style="`${isLogin ? '' : 'display: none'}`">
       <div class="list-group">
         <div v-if="dataRented.length === 0" class="orderEmpty">
-          <p>Đơn mượn trống</p>
+          <p>Đơn Mượn Trống</p>
         </div>
         <div
           v-for="(rented, index) in dataRented"
@@ -37,7 +37,7 @@
         >
           <div class="infoUser mb-2">
             <div class="d-flex justify-content-between align-items-center">
-              <h5 class="font-weight-bold">Thông tin độc giả:</h5>
+              <h5 class="font-weight-bold">Thông Tin Độc Giả:</h5>
               <p
                 class="m-0 font-weight-bold"
                 style="color: #40c1fa; font-size: 1.4rem"
@@ -66,44 +66,44 @@
             </div>
 
             <p class="d-inline">
-              Họ tên: {{ rented.MaDocGia.HoLot }} {{ rented.MaDocGia.Ten }}
+              Họ Tên: {{ rented.MaDocGia.HoLot }} {{ rented.MaDocGia.Ten }}
             </p>
             <p class="ml-3 d-inline">
-              Số điện thoại: {{ rented.MaDocGia.DienThoai }}
+              Số Điện Thoại: {{ rented.MaDocGia.DienThoai }}
             </p>
-            <p class="ml-3 d-inline">Địa chỉ: {{ rented.MaDocGia.DiaChi }}</p>
+            <p class="ml-3 d-inline">Địa Chỉ: {{ rented.MaDocGia.DiaChi }}</p>
           </div>
           <div class="d-flex">
-            <h5 style="font-size: 1.2rem">Chi tiết đơn mượn:</h5>
+            <h5 style="font-size: 1.2rem">Chi Tiết Đơn Mượn:</h5>
             <a-modal
               style="top: 40px"
               v-model:open="isModalDelete"
-              title="Xóa đơn mượn"
+              title="Xóa Đơn Mượn"
               @ok="handleOkDelete()"
               :ok-button-props="okButtonProps"
               @cancel="handleCancelDelete"
               cancelText="Đóng"
-              okText="Xóa đơn mượn"
+              okText="Xóa Đơn Mượn"
             >
-              <p>Bạn có chắc muốn xóa đơn mượn.</p>
+              <p>Bạn có chắc muốn xóa đơn mượn ?</p>
             </a-modal>
             <a-modal
               style="top: 40px"
               v-model:open="isModal"
               width="500px"
-              title="Cập nhật trạng thái mượn"
+              title="Cập Nhật Trạng Thái Mượn"
               @ok="handleOkUpdateTraSach"
               @cancel="handleCancelUpdate"
               :ok-button-props="okButtonAccess"
               cancelText="Đóng"
-              okText="Xác nhận"
+              okText="Xác Nhận"
             >
               <select v-model="selectedValue" class="select-options">
-                <option value="">Chọn trạng thái mượn sách</option>
-                <option value="W">Chờ nhận</option>
-                <option value="D">Đang mượn</option>
-                <option value="Y">Đã trả</option>
-                <option value="N">Chưa trả</option>
+                <option value="">Chọn Trạng Thái Mượn Sách</option>
+                <option value="W">Chờ Nhận</option>
+                <option value="D">Đang Mượn</option>
+                <option value="Y">Đã Trả</option>
+                <option value="N">Chưa Trả</option>
               </select>
               <div
                 :style="`${
@@ -119,10 +119,10 @@
           <table class="table text-center">
             <thead>
               <tr class="table-borderless">
-                <th scope="col">Tên sách</th>
-                <th scope="col">Số lượng</th>
-                <th scope="col">Đơn giá/ngày</th>
-                <th scope="col">Trạng thái mượn</th>
+                <th scope="col">Tên Sách</th>
+                <th scope="col">Số Lượng</th>
+                <th scope="col">Đơn Giá/Ngày</th>
+                <th scope="col">Trạng Thái Mượn</th>
               </tr>
             </thead>
             <tbody>
@@ -161,32 +161,32 @@
           <div class="d-flex">
             <div>
               <p>
-                Thành tiền:
+                Thành Tiền:
                 <span style="color: #d50d0d; font-weight: bold"
                   >{{ rented.ThanhTien }} VND</span
                 >
               </p>
               <p class="d-inline">
-                Ngày mượn sách: {{ formatDateTime(rented.NgayMuon) }}
+                Ngày Mượn Sách: {{ formatDateTime(rented.NgayMuon) }}
               </p>
               <p class="d-inline ml-3">
-                Ngày trả sách: {{ formatDateTime(rented.NgayTra) }}
+                Ngày Trả Sách: {{ formatDateTime(rented.NgayTra) }}
               </p>
             </div>
             <div
               v-if="rented.TrangThai === 'A'"
               class="statusOrderSuccess mr-0 mb-0"
             >
-              Đã duyệt
+              Đã Duyệt
             </div>
-            <div v-else class="statusOrderWait mr-0 mb-0">Đã hủy</div>
+            <div v-else class="statusOrderWait mr-0 mb-0">Đã Hủy</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div v-else class="denied">
-    <h3 class="text-center mt-5">Vui lòng đăng nhập để xử dụng dịch vụ</h3>
+    <h3 class="text-center mt-5">Vui lòng đăng nhập tài khoản để thao tác.</h3>
   </div>
 </template>
 

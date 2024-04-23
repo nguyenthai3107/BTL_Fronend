@@ -7,7 +7,7 @@
     margin-top: 40px;
     border: none;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.69);
-    border-radius: 10px;
+    border-radius: 20px;
   }
   
   .logo {
@@ -22,7 +22,7 @@
       position: absolute;
       font-size: 34px;
       transform: translateY(2px);
-      color: #00ffcc;
+      color: #09896f;
       font-weight: bold;
     }
   }
@@ -106,7 +106,7 @@
   }
   
   .btnPay {
-    background-image: linear-gradient(to right, #30b499, #07f4c4);
+    background-image: linear-gradient(to left, #ec3030, #09896f);
     margin: 10px 0px;
     padding: 8px;
     text-align: center;
@@ -140,13 +140,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, #96c93d, #00b09b);
-    border-radius: 100% 0 100% 0;
+    background: linear-gradient(to right, #ec3030, #09896f);
+    border-radius: 30% 0 30% 0;
     div{
         transition: opacity 0.3s ease-in-out;
         font-size: 34px;
         transform: translateX(-100px);
-        color: #00ffcc;
+        color: #09896f;
         font-weight: bold;
     }
     p{
@@ -154,7 +154,7 @@
         color: #e6e6e6;
     }
     .btn-register{
-        background-image: linear-gradient(to right, #d4db15, #07f4c4);
+        background-image: linear-gradient(to left, #ec3030, #09896f);
         margin: 10px 0px;
         padding: 8px;
         text-align: center;

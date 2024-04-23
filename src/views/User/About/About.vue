@@ -7,7 +7,7 @@
             class="inputSearch"
             v-model="searchQuery"
             type="search"
-            placeholder="Tìm kiếm sách"
+            placeholder="Tìm Kiếm Sách"
             aria-label="Search"
           />
           <span @click="searchBooks" class="iconSearch"
@@ -28,23 +28,23 @@
               </div>
               <div class="rightItem">
                 <div class="dataItem">
-                  <span class="title">Tên sách:</span>
+                  <span class="title">Tên Sách:</span>
                   <span class="content"> {{ item.TenSach }}</span>
                 </div>
                 <div class="dataItem">
-                  <span class="title">Số quyển:</span>
+                  <span class="title">Số Quyển:</span>
                   <span class="content">{{ item.SoQuyen }}</span>
                 </div>
                 <div class="dataItem">
-                  <span class="title">Đơn giá:</span>
+                  <span class="title">Đơn Giá:</span>
                   <span class="content">{{ item.DonGia }} VND</span>
                 </div>
                 <div class="dataItem">
-                  <span class="title">Năm xuất bản:</span>
+                  <span class="title">Năm Xuất Bản:</span>
                   <span class="content"> {{ item.NamXuatBan }}</span>
                 </div>
                 <div class="dataItem">
-                  <span class="title">Nhà xuất bản:</span>
+                  <span class="title">Nhà Xuất Bản:</span>
                   <span class="content"> {{ item.MaNxb ? item.MaNxb.TenNxb : '' }}</span>
                 </div>
               </div>
@@ -54,10 +54,10 @@
                   class="btnAddToCart"
                   @click="showModalRentBook(item)"
                 >
-                  Mượn sách
+                  Mượn Sách
                 </button>
                 <router-link v-else to="/login">
-                  <button class="btnAddToCart">Mượn sách</button>
+                  <button class="btnAddToCart">Mượn Sách</button>
                 </router-link>
               </div>
             </div>
@@ -68,7 +68,7 @@
           class="text-center"
           style="font-weight: bold; font-size: 18px"
         >
-          <p>Không tìm thấy sách</p>
+          <p>Không tìm thấy sách.</p>
         </div>
         <!-- Modal rent  -->
         <a-modal
@@ -89,7 +89,7 @@
               </div>
               <div class="rightModal col">
                 <div class="groupForm" style="opacity: 0.6">
-                  <span>Tên sách:</span>
+                  <span>Tên Sách:</span>
                   <input
                     type="text"
                     class="inputGroup"
@@ -99,7 +99,7 @@
                   />
                 </div>
                 <div class="groupForm" style="opacity: 0.6">
-                  <span>Đơn giá/ngày:</span>
+                  <span>Đơn Giá/Ngày:</span>
                   <input
                     type="number"
                     class="inputGroup"
@@ -110,7 +110,7 @@
                   />
                 </div>
                 <div class="groupForm" style="opacity: 0.6">
-                  <span>Số quyển:</span>
+                  <span>Số Quyển:</span>
                   <input
                     type="number"
                     class="inputGroup"
@@ -123,7 +123,7 @@
                   {{ errors.ngayMuon }}
                 </p>
                 <div class="groupForm">
-                  <span>Ngày mượn</span>
+                  <span>Ngày Mượn</span>
                   <input
                     type="date"
                     min="1"
@@ -137,7 +137,7 @@
                   {{ errors.ngayTra }}
                 </p>
                 <div class="groupForm">
-                  <span>Ngày trả</span>
+                  <span>Ngày Trả</span>
                   <input
                     type="date"
                     min="1"
@@ -150,7 +150,7 @@
                   {{ errors.soLuong }}
                 </p>
                 <div class="groupForm">
-                  <span>Số lượng:</span>
+                  <span>Số Lượng:</span>
                   <input
                     min="1"
                     type="number"
@@ -160,7 +160,7 @@
                   />
                 </div>
                 <div class="totalPrice">
-                  Thành tiền:
+                  Thành Tiền:
                   <span
                     >{{
                       thanhTien(ngayMuon, ngayTra, soLuong, selectedItem.DonGia)
@@ -218,13 +218,13 @@
       new Date(ngayTra.value) < today ||
       new Date(ngayTra.value) < new Date(ngayMuon.value)
     ) {
-      errors.value.ngayTra = "Ngày trả không thể nhỏ hơn  ngày mượn.";
+      errors.value.ngayTra = "Ngày trả không thể nhỏ hơn ngày mượn.";
     } else {
       errors.value.ngayTra = "";
     }
     // Kiểm tra số lượng
     if (soLuong.value < 0) {
-      errors.value.soLuong = "Vui lòng chọn số lượng dương";
+      errors.value.soLuong = "Vui lòng chọn số lượng dương.";
     } else if (!soLuong.value || soLuong.value > selectedItem.value.SoQuyen) {
       errors.value.soLuong = `Số lượng không thể lớn hơn ${selectedItem.value.SoQuyen}.`;
     } else {
@@ -245,7 +245,7 @@
         }));
       })
       .catch((error) => {
-        console.error("Lỗi khi nhận dữ liệu từ API", error);
+        console.error("Lỗi khi nhận dữ liệu từ API.", error);
       });
   };
   fetchData();
@@ -311,7 +311,7 @@
   
   const searchBooks = () => {
     if (searchQuery.value.trim() === "") {
-      toast.warn("Vui lòng nhập ký tự");
+      toast.warn("Vui lòng nhập ký tự.");
     } else {
       axios
         .get(`http://localhost:3000/book?tenSach=${searchQuery.value}`)
@@ -324,7 +324,7 @@
           }
         })
         .catch((error) => {
-          console.error("Lỗi khi nhận dữ liệu từ API", error);
+          console.error("Lỗi khi nhận dữ liệu từ API.", error);
         });
     }
   };

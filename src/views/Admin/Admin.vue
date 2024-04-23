@@ -1,6 +1,6 @@
 <template>
   <div class="containPage" v-if="isLogin">
-    <h2>Dashboard</h2>
+    <h2>Trang Chủ</h2>
     <div class="contentPage">
       <div class="listCard">
         <div class="row pl-3">
@@ -15,7 +15,7 @@
                 <div class="numberCard">
                   {{ totalOrder }}
                 </div>
-                <div class="nameCard">Đơn mượn</div>
+                <div class="nameCard">Đơn Mượn Đã Duyệt</div>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
                 <div class="numberCard">
                   {{ totalDenied }}
                 </div>
-                <div class="nameCard">Đơn mượn đã hủy</div>
+                <div class="nameCard">Đơn Mượn Đã Hủy</div>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
                 <div class="numberCard">
                   {{ totalPending }}
                 </div>
-                <div class="nameCard">Đơn mượn chờ</div>
+                <div class="nameCard">Đơn Mượn Chờ Duyệt</div>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
                 <div class="numberCard">
                   {{ totalStaff }}
                 </div>
-                <div class="nameCard">Tổng nhân viên</div>
+                <div class="nameCard">Tổng Nhân Viên/Quản Lý</div>
               </div>
             </div>
           </div>
@@ -78,30 +78,30 @@
                 <div class="numberCard">
                   {{ totalCustomer }}
                 </div>
-                <div class="nameCard">Tổng độc giả</div>
+                <div class="nameCard">Tổng Độc Giả</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h3 class="px-4 mt-2 mb-0">Đơn mượn sách</h3>
+      <h3 class="px-4 mt-2 mb-0">Đơn Mượn</h3>
       <div class="ordersCustomer mt-1">
         <table class="table table-hover text-center">
           <thead>
             <tr>
               <th scope="col">STT</th>
-              <th scope="col">Tên độc giả</th>
-              <th scope="col">Tên sách</th>
-              <th scope="col">Ngày mượn</th>
-              <th scope="col">Ngày trả</th>
-              <th scope="col">Số quyển</th>
-              <th scope="col">Số tiền</th>
-              <th>Trạng thái</th>
+              <th scope="col">Tên Độc Giả</th>
+              <th scope="col">Tên Sách</th>
+              <th scope="col">Ngày Mượn</th>
+              <th scope="col">Ngày Trả</th>
+              <th scope="col">Số Quyển</th>
+              <th scope="col">Số Tiền</th>
+              <th>Trạng Thái</th>
             </tr>
           </thead>
           <tbody>
             <td colspan="10" v-if="listRents.length === 0">
-              <p class="pt-2">Danh sách order trống</p>
+              <p class="pt-2">Danh Sách Order Trống</p>
             </td>
             <tr v-for="(rent, index) in listRents" :key="index">
               <th scope="row">{{ index + 1 }}</th>
@@ -150,7 +150,7 @@
     </div>
   </div>
   <div v-else class="denied">
-    <h3 class="text-center mt-5">Vui lòng đăng nhập để xử dụng dịch vụ</h3>
+    <h3 class="text-center mt-5">Vui lòng đăng nhập tài khoản để thao tác.</h3>
   </div>
 </template>
 

@@ -3,7 +3,7 @@
       <section>
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
+            <div class="col col-xl-20">
               <div class="card loginForm">
                 <div class="row g-0">
                   <div class="col-md-6 col-lg-6 d-flex align-items-center">
@@ -15,15 +15,15 @@
                       >
                         <div class="d-flex align-items-center mb-3 pb-1">
                           <div class="logo">
-                            <img src="../../assets/logo.png" alt="" />
+                            <img src="../../assets/logoBook.png" alt="" />
                             <span class="titleWeb"
-                              >BOOKS<span class="text-dark">FUTURE</span></span
+                              >KNOW<span class="text-dark">LIB</span></span
                             >
                           </div>
                         </div>
   
                         <div class="fw-normal pb-2 desLogin">
-                          Đăng ký tài khoản nhân viên cửa hàng
+                          Đăng Ký Tài Khoản Nhân Viên
                         </div>
   
                         <div class="group">
@@ -37,7 +37,7 @@
                             class="groupInput"
                             autocomplete="off"
                             v-model="phone"
-                            placeholder="Nhập số điện thoại"
+                            placeholder="Số điện thoại"
                             required
                           />
                         </div>
@@ -52,7 +52,7 @@
                             v-model="username"
                             class="groupInput"
                             autocomplete="off"
-                            placeholder="Nhập họ tên"
+                            placeholder="Họ Tên"
                             required
                           />
                         </div>
@@ -68,7 +68,7 @@
                             id="password"
                             class="groupInput"
                             autocomplete="off"
-                            placeholder="Nhập mật khẩu"
+                            placeholder="Mật Khẩu"
                             required
                           />
                           <div @click="toggleShowPassword" class="iconPassword">
@@ -92,9 +92,9 @@
                             id="position"
                             required
                           >
-                            <option value="">Chọn chức vụ</option>
-                            <option value="Quản lý">Quản lý</option>
-                            <option value="Nhân viên">Nhân viên</option>
+                            <option value="">Chọn Chức Vụ</option>
+                            <option value="Quản lý">Quản Lý</option>
+                            <option value="Nhân viên">Nhân Viên</option>
                           </select>
                         </div>
   
@@ -109,7 +109,7 @@
                             v-model="address"
                             class="groupInput"
                             autocomplete="off"
-                            placeholder="Nhập địa chỉ"
+                            placeholder="Địa Chỉ"
                             required
                           />
                         </div>
@@ -131,12 +131,12 @@
                           />
                         </div>
                         <div class="pt-1 mb-4">
-                          <button class="btnPay" type="submit">Register</button>
+                          <button class="btnPay" type="submit">Đăng Ký</button>
                         </div>
-                        <p class="mb-1 pb-lg-2" style="color: #393f81">
-                          Bạn đã có tài khoản?
+                        <p class="mb-1 pb-lg-2" style="color: #09896f;">
+                          Đã có tài khoản?
                           <router-link to="/admin/login" class="button">
-                            <span style="color: #393f81">Login here</span>
+                            <strong style="color: #09896f;">Đăng Nhập</strong>
                           </router-link>
                         </p>
                       </form>
@@ -144,7 +144,7 @@
                   </div>
                   <div class="col-md-6 col-lg-6 d-none d-md-block m-auto">
                     <img
-                      src="https://i.pinimg.com/564x/e1/2b/5b/e12b5b0bb42756d3dcc499f498a1fa1f.jpg"
+                      src="https://phunugioi.com/wp-content/uploads/2021/11/Background-book-sach-tren-gia.jpg"
                       alt="login form"
                       class="imageLogin"
                     />

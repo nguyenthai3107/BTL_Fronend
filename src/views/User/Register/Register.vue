@@ -3,17 +3,17 @@
     <section>
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col col-xl-10">
+          <div class="col col-xl-20">
             <div class="card loginForm">
               <div class="row g-0">
                 <div class="col-md-6 col-lg-6">
                   <div class="wrapper">
-                    <div class="title">Welcome Back!</div>
+                    <div class="title">Chào, Người Mới!</div>
                     <p>
-                      Enter your personal details to use all of site features.
+                      Nhập thông tin cần thiết để kết nối với chúng tôi
                     </p>
                     <router-link to="/login" class="button btn-login">
-                      <span>SIGN IN</span>
+                      <span>Đăng Nhập</span>
                     </router-link>
                   </div>
                 </div>
@@ -27,7 +27,7 @@
                         <div class="titleWeb">Create account</div>
                       </div>
                       <div class="fw-normal desLogin">
-                        Register for a store employee account
+                        Đăng Ký Thành Viên - Độc Giả
                       </div>
                       <div class="group">
                         <label for="phone"
@@ -40,7 +40,7 @@
                           class="groupInput"
                           autocomplete="off"
                           v-model="phone"
-                          placeholder="Nhập số điện thoại"
+                          placeholder="Số Điện Thoại"
                           required
                         />
                       </div>
@@ -55,7 +55,7 @@
                           v-model="username"
                           class="groupInput"
                           autocomplete="off"
-                          placeholder="Nhập họ tên"
+                          placeholder="Họ Tên"
                           required
                         />
                       </div>
@@ -101,7 +101,7 @@
                           v-model="address"
                           class="groupInput"
                           autocomplete="off"
-                          placeholder="Nhập địa chỉ"
+                          placeholder="Địa Chỉ"
                           required
                         />
                       </div>
@@ -116,7 +116,7 @@
                           id="password"
                           class="groupInput"
                           autocomplete="off"
-                          placeholder="Nhập mật khẩu"
+                          placeholder="Mật Khẩu"
                           required
                         />
                         <div @click="toggleShowPassword" class="iconPassword">
@@ -145,7 +145,7 @@
                         />
                       </div>
                       <div class="pt-1 mb-4">
-                        <button class="btnPay" type="submit">SIGN UP</button>
+                        <button class="btnPay" type="submit">Đăng Ký</button>
                       </div>
                     </form>
                   </div>

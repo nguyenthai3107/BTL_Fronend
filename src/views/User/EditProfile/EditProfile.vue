@@ -1,7 +1,7 @@
 <template>
     <div class="containPage">
       <div class="titlePage">
-        <h2>Chỉnh sửa thông tin</h2>
+        <h2>Chỉnh Sửa Thông Tin</h2>
       </div>
       <div class="contentPage">
         <section>
@@ -20,11 +20,11 @@
                         style="width: 150px; z-index: 1"
                       />
                     <h5 class="my-3">{{ data.Ten }}</h5>
-                    <p class="text-muted mb-1">Đọc giả</p>
+                    <p class="text-muted mb-1">Độc Giả</p>
                     <p class="text-muted mb-4">{{ data.NgaySinh }}</p>
                     <div class="d-flex justify-content-center mb-2">
                       <label for="image" class="btn btn-primary"
-                        ><i class="fa-solid fa-image"></i> Thay đổi</label
+                        ><i class="fa-solid fa-image"></i>Chỉnh Sửa</label
                       >
                       <input
                         type="file"
@@ -42,7 +42,7 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-sm-3">
-                        <p class="lableGroup">Họ tên</p>
+                        <p class="lableGroup">Họ Tên</p>
                       </div>
                       <div class="col-sm-9">
                         <div class="input-group">
@@ -57,7 +57,7 @@
                     <hr />
                     <div class="row">
                       <div class="col-sm-3">
-                        <p class="lableGroup">Ngày sinh</p>
+                        <p class="lableGroup">Ngày Sinh</p>
                       </div>
                       <div class="col-sm-9">
                         <div class="input-group">
@@ -72,7 +72,7 @@
                     <hr />
                     <div class="row">
                       <div class="col-sm-3">
-                        <p class="lableGroup">Phone</p>
+                        <p class="lableGroup">Số Điện Thoại</p>
                       </div>
                       <div class="col-sm-9">
                         <div class="input-group">
@@ -87,7 +87,7 @@
                     <hr />
                     <div class="row">
                       <div class="col-sm-3">
-                        <p class="lableGroup">Địa chỉ</p>
+                        <p class="lableGroup">Địa Chỉ</p>
                       </div>
                       <div class="col-sm-9">
                         <div class="input-group">
@@ -107,7 +107,7 @@
                   </router-link>
   
                   <button class="btn btn-primary m-2" @click="handleSave">
-                    Cập nhật
+                    Cập Nhật
                   </button>
                 </div>
               </div>

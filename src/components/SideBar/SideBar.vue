@@ -2,7 +2,7 @@
   <aside :class="`${is_expanded ? 'is-expanded' : ''}`">
     <div class="logo">
       <img :src="logoURL" alt="Vue" />
-      <span class="titleWeb">F<span class="text-dark">BOOKS</span></span>
+      <span class="titleWeb">K<span class="text-dark">LIB</span></span>
     </div>
 
     <div class="menu-toggle-wrap">
@@ -19,25 +19,25 @@
         <span class="material-icons"
           ><i class="fa-solid fa-house icon"></i
         ></span>
-        <span class="text">Home</span>
+        <span class="text">Trang Chủ</span>
       </router-link>
       <router-link to="/about" class="button">
         <span class="material-icons"
           ><i class="fa-solid fa-book-tanakh"></i></span>
-        <span class="text">List Book</span>
+        <span class="text">Sách</span>
       </router-link>
       <router-link to="/order" class="button">
         <span class="material-icons"
           ><i class="fa-solid fa-list"></i></span>
-        <span class="text">Oders</span>
+        <span class="text">Đơn Mượn</span>
       </router-link>
       <router-link v-if="isLogin" to="/profile" class="button">
         <span class="material-icons"><i class="fa-solid fa-user"></i></span>
-        <span class="text">Profile</span>
+        <span class="text">Tài Khoản</span>
       </router-link>
       <router-link v-else to="/login" class="button">
         <span class="material-icons"><i class="fa-solid fa-user"></i></span>
-        <span class="text">Profile</span>
+        <span class="text">Tài Khoản</span>
       </router-link>
     </div>
     <div class="flex"></div>
@@ -46,7 +46,7 @@
         <span class="material-icons"
           ><i class="fa-solid fa-right-from-bracket"></i
         ></span>
-        <span class="text">Logout</span>
+        <span class="text">Đăng Xuất</span>
       </div>
       <a-modal
         title="Đăng xuất"

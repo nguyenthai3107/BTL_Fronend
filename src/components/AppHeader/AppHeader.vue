@@ -22,7 +22,7 @@
           </div>
           <div v-else>
             <router-link to="/login" class="text-decoration-none">
-              <button class="btnLogin">Đăng nhập</button>
+              <button class="btnLogin">Đăng Nhập</button>
             </router-link>
           </div>
         </div>

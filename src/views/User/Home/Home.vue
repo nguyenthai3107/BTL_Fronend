@@ -2,8 +2,8 @@
     <div class="containPage">
       <div class="titlePage">
         <h2>
-          Welcome to
-          <span class="titleWeb">F<span class="text-dark">BOOKS</span></span>
+          Chào Mừng Đến Với
+          <span class="titleWeb">KNOW<span class="text-dark">LIB</span></span>
         </h2>
       </div>
       <div class="contentPage">
@@ -13,26 +13,26 @@
           <div class="text-center text-lg-start">
             <div class="container">
               <div class="row gx-lg-5 align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-12 mb-5 mb-lg-0">
                   <h1 class="my-5 fw-bold ls-tight titleIntro">
-                    There is no friend as loyal as a
+                    Tâm hồn được nuôi dưỡng bởi
                     <span class="titleWeb"
-                      >Book.<span class="text-dark"></span
+                      >Những Quyển Sách.<span class="text-dark"></span
                     ></span>
                     <br />
-                    <span class="text-primary">(Ernest Hemingway)</span>
+                    <span class="auth">- William Shakespeare</span>
                   </h1>
                   <p style="color: hsl(217, 10%, 50.8%)">
-                    Books are not only pages filled with knowledge, but also doors
-                    opening to new worlds, endless sources of inspiration, and
-                    loyal companions in the loneliest moments of life. Within each
-                    page, we discover not only the culture, history, and
-                    philosophy of humanity but also encounter wonders, adventures,
-                    and valuable lessons for ourselves.
+                    Quyển sách là kho báu vô hình của nhân loại, mở ra trước mắt chúng ta 
+                    một thế giới phong phú của tri thức, trí tưởng tượng và sự hiểu biết. 
+                    Trong từng trang sách, chúng ta không chỉ phát hiện những điều kỳ diệu về thế giới xung quanh, 
+                    mà còn tìm thấy những giá trị sâu thẳm trong mỗi con người.
+                    Sách không chỉ là nguồn cảm hứng vô tận, mà còn là nguồn ánh sáng dẫn đường trong cuộc sống, 
+                    là minh chứng cho sự tiến bộ không ngừng nghỉ của mỗi người chúng ta.
                   </p>
   
                   <router-link to="/about" class="text-decoration-none">
-                    <button class="btnReadMore">Order now</button>
+                    <button class="btnReadMore">Mượn Sách Ngay!</button>
                   </router-link>
                 </div>
   

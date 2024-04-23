@@ -23,7 +23,7 @@
     position: absolute;
     font-size: 34px;
     transform: translateY(2px);
-    color: #00ffcc;
+    color: #09896f;
     font-weight: bold;
   }
   
@@ -114,7 +114,7 @@
   }
   
   .btnPay {
-    background-color: #30b499aa;
+    background-image: linear-gradient(to left, #ec3030, #09896f);
     margin: 10px 0px;
     padding: 8px;
     text-align: center;
@@ -126,13 +126,19 @@
     display: block;
     font-size: 18px;
     width: 100%;
+  
+    &:hover {
+      background-position: right center;
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
   
   .btnPay:hover {
     background-position: right center;
     color: #ffffff;
     text-decoration: none;
-    background-color: #07f4c4;
+    background-color: #09896f;
   }
   
   .imageLogin {

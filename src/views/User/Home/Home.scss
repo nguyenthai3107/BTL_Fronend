@@ -3,7 +3,7 @@
     height: 70vh;
   
     .titleWeb {
-      color: #07f4c4;
+      color: #09896f;
       font-weight: bold;
     }
   
@@ -21,22 +21,25 @@
   }
   
   .btnReadMore {
-    background-image: linear-gradient(
-      to right,
-      #07f4c4 0%,
-      #1ed956 51%,
-      #798207 100%
-    );
-    margin: 30px auto;
-    padding: 15px 35px;
+    background-image: linear-gradient(to left, #ec3030, #09896f);
+    margin: 10px 0px;
+    margin-top: 50px;
+    padding: 8px;
     text-align: center;
-    text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 20px #000000;
     border-radius: 10px;
     display: block;
+    font-size: 18px;
+    width: 100%;
+  
+    &:hover {
+      background-position: right center;
+      color: #ffffff;
+      text-decoration: none;
+    }
   }
   
   .btnReadMore:hover {
@@ -60,4 +63,8 @@
         border-radius: 40px;
       }
     }
+  }
+
+  .auth {
+    color: #ec3030;
   }

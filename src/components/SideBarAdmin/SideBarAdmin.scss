@@ -1,13 +1,13 @@
 aside {
     display: flex;
     flex-direction: column;
-    background-color: var(--light);
-    color: var(--light);
+    background-color: #09896f;
+    color: #09896f;
     width: calc(2rem + 32px);
     overflow: hidden;
     min-height: 100vh;
     padding: 1rem;
-    background-color: #07f4c4;
+    background-color: #09896f;
     transition: 0.2s ease-in-out;
     .flex {
       flex: 1 1 0%;
@@ -26,7 +26,7 @@ aside {
         transition: opacity 0.3s ease-in-out;
         position: absolute;
         font-size: 20px;
-        color: var(--purple);
+        color: #ffffff;
         font-weight: bold;
       }
     }
@@ -45,13 +45,13 @@ aside {
   
         .material-icons {
           font-size: 2rem;
-          color: var(--purple);
+          color: #ffffff;
           transition: 0.2s ease-out;
         }
   
         &:hover {
           .material-icons {
-            color: var(--primary);
+            color: #ec3030;
             transform: translateX(0.5rem);
           }
         }
@@ -83,12 +83,12 @@ aside {
         cursor: pointer;
         .material-icons {
           font-size: 20px;
-          color: var(--dark);
+          color: #ffffff;
           transition: 0.2s ease-in-out;
         }
   
         .text {
-          color: var(--dark);
+          color: #ffffff;
           transition: 0.2s ease-in-out;
           font-weight: bold;
   
@@ -100,7 +100,7 @@ aside {
             font-weight: bold;
             margin-left: 10px;
             padding: 0px 3px;
-            background-color: var(--purple);
+            background-color: #ec3030;
             border-radius: 50%;
           }
         }
@@ -109,20 +109,20 @@ aside {
           background-color: #c2b4b463;
           .material-icons,
           .text {
-            color: var(--dark);
+            color: #ec3030;
             font-weight: bold;
           }
         }
   
         &.router-link-exact-active {
           background-color: #c2b4b463;
-          border-right: 5px solid var(--purple);
+          border-right: 5px solid #ec3030;
           .material-icons {
-            color: var(--purple);
+            color: #ec3030;
           }
   
           .text {
-            color: var(--dark);
+            color: #ffffff;
             font-weight: bold;
           }
         }
@@ -159,7 +159,7 @@ aside {
   
       .titleWeb {
         opacity: 1;
-        color: #07f4c4;
+        color: #ffffff;
       }
   
       .button {

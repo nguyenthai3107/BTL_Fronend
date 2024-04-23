@@ -1,15 +1,15 @@
 <template>
   <div class="containPage" v-if="isLogin">
-    <h2>Danh sách người dùng</h2>
+    <h2>Danh Sách Thành Viên</h2>
     <div class="contentPage" :style="`${isLogin ? '' : 'display: none'}`">
       <a-tabs v-model:activeKey="activeKey">
-        <a-tab-pane key="1" tab="Độc giả">
-          <h4>Danh sách độc giả</h4>
+        <a-tab-pane key="1" tab="Độc Giả">
+          <h4>Danh Sách Độc Giả</h4>
           <a-table :dataSource="data" :columns="columns" rowKey="_id">
           </a-table>
         </a-tab-pane>
-        <a-tab-pane key="2" tab="Nhân viên" force-render>
-          <h4>Danh sách nhân viên</h4>
+        <a-tab-pane key="2" tab="Nhân Viên/Quản Lý" force-render>
+          <h4>Danh Sách Nhân Viên/Quản Lý</h4>
           <a-table :dataSource="dataStaff" :columns="columnsStaff" rowKey="_id">
           </a-table>
         </a-tab-pane>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div v-else class="denied">
-    <h3 class="text-center mt-5">Vui lòng đăng nhập để xử dụng dịch vụ</h3>
+    <h3 class="text-center mt-5">Vui lòng đăng nhập tài khoản để thao tác.</h3>
   </div>
 </template>
 
@@ -33,32 +33,32 @@ const isLogin = localStorage.getItem("isLogin");
 
 const columns = [
   {
-    title: "Id đọc giả",
+    title: "ID Độc Giả",
     dataIndex: "_id",
     key: "_id",
   },
   {
-    title: "Tên",
+    title: "Họ Tên",
     dataIndex: "Ten",
     key: "Ten",
   },
   {
-    title: "Ngày sinh",
+    title: "Ngày Sinh",
     dataIndex: "NgaySinh",
     key: "NgaySinh",
   },
   {
-    title: "Giới tính",
+    title: "Giới Tính",
     dataIndex: "Phai",
     key: "Phai",
   },
   {
-    title: "Số điện thoại",
+    title: "Số Điện Thoại",
     dataIndex: "DienThoai",
     key: "DienThoai",
   },
   {
-    title: "Địa chỉ",
+    title: "Địa Chỉ",
     dataIndex: "DiaChi",
     key: "DiaChi",
   },
@@ -66,27 +66,27 @@ const columns = [
 
 const columnsStaff = [
   {
-    title: "Id user",
+    title: "ID Nhân Viên/Quản Lý",
     dataIndex: "_id",
     key: "_id",
   },
   {
-    title: "Họ tên",
+    title: "Họ Tên",
     dataIndex: "HoTenNv",
     key: "HoTenNv",
   },
   {
-    title: "Chức vụ",
+    title: "Chức Vụ",
     dataIndex: "ChucVu",
     key: "ChucVu",
   },
   {
-    title: "Số điện thoại",
+    title: "Số Điện Thoại",
     dataIndex: "SoDienThoai",
     key: "SoDienThoai",
   },
   {
-    title: "Địa chỉ",
+    title: "Địa Chỉ",
     dataIndex: "DiaChi",
     key: "DiaChi",
   },

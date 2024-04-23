@@ -3,36 +3,45 @@
       <div class="logo">
         <img :src="logoURL" alt="Vue" />
   
-        <span class="titleWeb">F<span class="text-dark">Books</span></span>
+        <span class="titleWeb">K<span class="text-dark">LIB</span></span>
       </div>
+
+      <div class="menu-toggle-wrap">
+      <button class="menu-toggle" @click="ToggleMenu">
+        <span class="material-icons"
+          ><i class="fa-solid fa-angles-right fa-xs"></i
+        ></span>
+      </button>
+    </div>
+
       <h3>Menu</h3>
       <div class="menu">
         <router-link to="/admin/home" class="button">
           <span class="material-icons"
             ><i class="fa-solid fa-house icon"></i
           ></span>
-          <span class="text">Home</span>
+          <span class="text">Trang Chủ</span>
         </router-link>
         <router-link to="/admin/about" class="button">
           <span class="material-icons"><i class="fa-solid fa-book"></i></span>
-          <span class="text">List Book</span>
+          <span class="text">Sách</span>
         </router-link>
         <router-link to="/admin/customer" class="button">
           <span class="material-icons"><i class="fa-solid fa-users"></i></span>
-          <span class="text">Readers</span>
+          <span class="text">Thành Viên</span>
         </router-link>
         <router-link to="/admin/history" class="button">
           <span class="material-icons"><i class="fa-solid fa-clock"></i></span>
-          <span class="text">History</span>
+          <span class="text">Đơn Mượn</span>
         </router-link>
         <router-link v-if="isLogin" to="/admin/info" class="button">
           <span class="material-icons"><i class="fa-solid fa-user"></i></span>
-          <span class="text">Profile</span>
+          <span class="text">Tài Khoản</span>
         </router-link>
         
         <router-link v-else to="/admin/login" class="button">
           <span class="material-icons"><i class="fa-solid fa-user"></i></span>
-          <span class="text">Profile</span>
+          <span class="text">Tài Khoản</span>
         </router-link>
       </div>
       <div class="flex"></div>
@@ -41,7 +50,7 @@
           <span class="material-icons"
             ><i class="fa-solid fa-right-from-bracket"></i
           ></span>
-          <span class="text">Logout</span>
+          <span class="text">Đăng Xuất</span>
         </div>
         <a-modal
           title="Đăng xuất"
@@ -52,7 +61,7 @@
           okText="Đăng xuất"
           cancelText="Hủy"
         >
-          <p>Bạn có chắc muốn đăng xuất khỏi hệ thống?</p>
+          <p>Bạn có chắc muốn đăng xuất khỏi hệ thống ?</p>
         </a-modal>
       </div>
     </aside>

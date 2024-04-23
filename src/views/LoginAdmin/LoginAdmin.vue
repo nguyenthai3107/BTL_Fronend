@@ -3,7 +3,7 @@
       <section>
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
+            <div class="col col-xl-20">
               <div class="card loginForm">
                 <div class="row g-0">
                   <div class="col-md-6 col-lg-6 d-flex align-items-center">
@@ -11,15 +11,15 @@
                       <form @submit.prevent="login">
                         <div class="d-flex align-items-center mb-3 pb-1">
                           <div class="logo">
-                            <img src="../../assets/coffee-cup.png" alt="" />
+                            <img src="../../assets/logoBook.png" alt="" />
                             <span class="titleWeb"
-                              >Book<span class="text-dark">Future</span></span
+                              >KNOW<span class="text-dark">LIB</span></span
                             >
                           </div>
                         </div>
   
                         <div class="fw-normal pb-2 desLogin">
-                          Đăng nhập với quyền Admin
+                          Đăng Nhập Tài Khoản Nhân Viên
                         </div>
   
                         <div class="group">
@@ -33,7 +33,7 @@
                             v-model="phone"
                             name="phone"
                             autocomplete="off"
-                            placeholder="Nhập số điện thoại"
+                            placeholder="Số Điện Thoại"
                             required
                             maxlength="10"
                             minlength="9"
@@ -51,7 +51,7 @@
                             id="password"
                             class="groupInput"
                             autocomplete="off"
-                            placeholder="Nhập mật khẩu"
+                            placeholder="Mật Khẩu"
                             required
                           />
                           <div @click="toggleShowPassword" class="iconPassword">
@@ -64,14 +64,14 @@
                           </div>
                         </div>
                         <div class="pt-1 mb-4">
-                          <button class="btnPay">Login</button>
+                          <button class="btnPay">Đăng Nhập</button>
                         </div>
   
-                        <a class="small text-muted" href="#!">Quên mật khẩu</a>
-                        <p class="mb-1 pb-lg-2" style="color: #393f81">
+                        <a class="small text-muted" href="#!">Quên Mật Khẩu ?</a>
+                        <p class="mb-1 pb-lg-2" style="color: #09896f;">
                           Đăng ký tài khoản 
                           <router-link to="/admin/register" class="button">
-                            <strong style="color: #393f81">Tại đây</strong>
+                            <strong style="color: #09896f;">Tại Đây</strong>
                           </router-link>
                         </p>
                       </form>
@@ -79,7 +79,7 @@
                   </div>
                   <div class="col-md-6 col-lg-6 d-none d-md-block m-auto">
                     <img
-                      src="https://i.pinimg.com/564x/e1/2b/5b/e12b5b0bb42756d3dcc499f498a1fa1f.jpg"
+                      src="https://phunugioi.com/wp-content/uploads/2021/11/Background-book-sach-tren-gia.jpg"
                       alt="login form"
                       class="imageLogin"
                     />

@@ -7,7 +7,7 @@
   margin-top: 40px;
   border: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.69);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .logo {
@@ -106,7 +106,7 @@
 }
 
 .btnPay {
-  background-image: linear-gradient(to right, #30b499, #07f4c4);
+  background-image: linear-gradient(to left, #ec3030, #09896f);
   margin: 10px 0px;
   padding: 8px;
   text-align: center;
@@ -120,12 +120,11 @@
   width: 100%;
 
   &:hover {
-      background-position: right center;
-      color: #ffffff;
-      text-decoration: none;
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
   }
 }
-
 .imageLogin {
   max-width: 350px;
   height: auto;
@@ -136,36 +135,42 @@
 
 .wrapper {
   height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #5050b2;
-  border-radius: 100% 0 100% 0;
-  background: linear-gradient(to left, #96c93d, #00b09b);
-  color: #fff;
-  padding: 0 30px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ec3030, #09896f);
+    border-radius: 30% 0 30% 0;
 
   .title {
       font-size: 1.5rem;
       font-weight: 700;
+      transition: opacity 0.3s ease-in-out;
+      transform: translateX(-85px);
+      color: #09896f;
   }
 
   p {
       margin-top: 12px;
       font-size: 1rem;
-      font-weight: 500;
+      color: #e6e6e6;
+      font-weight: bold;
+
   }
 
   .btn-login {
-      margin-top: 4px;
-      padding: 8px 28px;
-      border: 1px solid #fff;
-      color: #fff;
-      text-transform: uppercase;
-      border-radius: 8px;
-      font-weight: 600;
+    background-image: linear-gradient(to left, #ec3030, #09896f);
+    margin: 10px 0px;
+    padding: 8px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #000000;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    width: 50%;
   }
 }
 .selectGroup {
